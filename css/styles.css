@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+:root {
+    --brand-color:#2196F3; 
+    --text-color: #757575;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.link  {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.link:hover {
+    color: var(--brand-color);
+}
+
+.link:focus {
+    color: var(--brand-color);
+}
+.logo {
+    font-family: 'Raleway';
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    color: var(--brand-color);
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--brand-color);
+}
+
+.button:focus {
+    background-color:var(--brand-color);
+}
+
+.nav-link {
+    font-size: 14px;
+    line-height: calc(16/14);
+    font-weight: 500;
+}
+
+.contact-link {
+    font-size: 14px;
+    line-height: calc(16/14);
+    color: var(--text-color);
+    font-weight: 500;
+
+}
+
+.address-link {
+    font-size: 14px
+}
+
+.logo-span {
+    color: black;
+}
+
+.card-title {
+    font-size: 18px;
+    line-height: calc(36/18);
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: calc(30/16);
+
+}
+
+.footer-text {
+    color: var(--text-color);
+}
+
+.main-title {
+    font-size: 44px;
+    line-height: calc(60/44);
+}
+
+.mail-list-title {
+    font-size: 14px;
+    line-height: calc(16/14);
+}
+
+.main-list-text {
+    font-size: 14px;
+    line-height: (24/14);
+}
+
+.task-title {
+    font-size: 36px;
+    line-height: (42/36);
+}
+
+.team-title {
+    font-size: 36px;
+    line-height: (42/36);
+}
+
+.team-item-title {
+    font-size: 16px;
+    line-height: (19/16);
+    font-weight: 500;
+}
+
+.team-item-par {
+    font-size: 16px;
+    line-height: (19/16);
+    color: var(--text-color);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
