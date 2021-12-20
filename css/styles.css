@@ -77,6 +77,7 @@ li {
 .card-text {
     font-size: 16px;
     line-height: calc(30/16);
+    color: var(--text-color);
 
 }
 
@@ -87,37 +88,42 @@ li {
 .main-title {
     font-size: 44px;
     line-height: calc(60/44);
+    color: white;
+    font-weight: 900;
 }
 
 .mail-list-title {
     font-size: 14px;
     line-height: calc(16/14);
+    font-weight: 700;
 }
 
 .main-list-text {
     font-size: 14px;
-    line-height: (24/14);
+    color: var(--text-color);
+    line-height: calc(24/14);
 }
 
 .task-title {
     font-size: 36px;
-    line-height: (42/36);
+    line-height: calc(42/36);
+    font-weight: 700;
 }
 
 .team-title {
     font-size: 36px;
-    line-height: (42/36);
+    line-height: calc(42/36);
 }
 
 .team-item-title {
     font-size: 16px;
-    line-height: (19/16);
+    line-height: calc(19/16);
     font-weight: 500;
 }
 
 .team-item-par {
     font-size: 16px;
-    line-height: (19/16);
+    line-height: calc(19/16);
     color: var(--text-color);
 
 }
