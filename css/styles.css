@@ -61,7 +61,8 @@ li {
 }
 
 .address-link {
-    font-size: 14px
+    font-size: 14px;
+    font-style: normal;
 }
 
 .logo-span {
