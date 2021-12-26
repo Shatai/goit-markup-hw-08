@@ -79,6 +79,10 @@ img {
 
 .header {
     display: flex;
+    
+}
+
+.main-header {
     border-bottom: 1px solid #ECECEC;
 }
 
