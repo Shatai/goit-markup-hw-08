@@ -42,6 +42,8 @@ button {
 .conteiner {
     width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .link:focus {
@@ -122,30 +124,72 @@ button {
 }
 
 .contact-link {
+    /* display: flex; */
     font-size: 14px;
     line-height: calc(16/14);
     color: var(--text-color);
+    letter-spacing: 0.02em;
     font-weight: 500;
+    text-align: center;
+    
 }
 
-.phone {
-    margin-left: 50px;
+.contact-item:nth-child(2) {
+    margin-left: 30px;
+    
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contact-item > .contact-link {
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+
+}
+
+.email:hover {
+    fill:#2196f3;
+    
+}
+
+.smartphone:hover {
+    fill:#2196f3;
 }
 
 .contact-list {
     display: flex;
     padding-top: 32px;
-    margin-left: auto;
+    margin-left: auto; 
 }
 
 /* INDEX.HTML */
 
     /* HERO */
-.hero{
-    background:#2F303A;
-    text-align: center;
+.hero {
+    /* background:#2F303A; */
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
+    url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #2F303A;
+
 }
 
 .main-title {
@@ -173,6 +217,7 @@ button {
     border-radius: 4px;
     height: 50px;
     width: 200px;
+    
 }
 
 
@@ -187,16 +232,23 @@ button {
     flex-basis: calc((100% - 120px) / 4);
 }
 
-.main-list::before {
-    content: '';
-    margin-bottom: 30px;
-    display: block;
+.main-block{
     height: 120px;
     width: 270px;
     background-color: #F5F4FA;
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
     
+
 }
 
+.main-item {
+    width: 70px;
+    height: 70px;
+    padding-top: 25px;
+}
 
 .main-list + .main-list {
     margin-left: 30px;
