@@ -185,8 +185,19 @@ button {
 
 .main-list {
     flex-basis: calc((100% - 120px) / 4);
-
 }
+
+.main-list::before {
+    content: '';
+    margin-bottom: 30px;
+    display: block;
+    height: 120px;
+    width: 270px;
+    background-color: #F5F4FA;
+    
+}
+
+
 .main-list + .main-list {
     margin-left: 30px;
 }
