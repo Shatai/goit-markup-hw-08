@@ -352,31 +352,80 @@ button {
     display: flex;
     align-items: center;
     margin-top: 16px;
+    justify-content: center;
+}
+
+.social-media-list {
+    /* border-radius: 50%; */
+    width: 44px;
+    height: 44px;
+    /* display: block; */
+    /* text-align: center; */
 }
 
 .social-media-item {
     width: 20px;
     height: 20px;
-    padding-top: 12px;
+    /* padding-top: 12px; */
+    fill: #AFB1B8;
 }
 
-.social-media-conteiner:not(:nth-child(1)) {
+.social-media-list:not(:nth-child(1)) {
     margin-left: 10px;
 }
 
-
-.social-media-conteiner {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: yellow;
-    display: block;
-    text-align: center;
-}
-
-.social-media-conteiner:nth-child(1) {
+/* .social-media-list:nth-child(1) {
     margin-left: 32px;
+} */
+
+
+.social-media-link:hover {
+    background-color: var(--brand-color);
 }
+.social-media-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social-media-link:hover .social-media-item {
+    fill: white;
+}
+
+
+/* CLIENTS */
+
+.client-section {
+    background-color: white;
+}
+
+.client-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: calc(42/36);
+    margin-bottom: 50px;
+    letter-spacing: 0.03em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
