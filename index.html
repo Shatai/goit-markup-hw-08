@@ -28,7 +28,7 @@
             <section class="hero">
                 <div class="conteiner">
                     <h1 class="main-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                    <button class="hero-button" type="button">Заказать услугу</button>
+                    <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
             <section class="section">
@@ -70,13 +70,22 @@
                     <h2 class="task-title">Чем мы занимаемся</h2>
                     <ul class="task-list">
                         <li class="task-item">
-                            <img class="img1" src="./images/img1.jpg" alt="картинка1" width="370">
-                     </li>
-                        <li class="task-item">
-                            <img class="img2" src="./images/img2.jpg" alt="картинка2" width="370">
+                                <img class="img1" src="./images/img1.jpg" alt="картинка1" width="370">
+                                <div class="task-name">
+                                    <p class="task-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                                </div>
                         </li>
                         <li class="task-item">
-                            <img class="img3" src="./images/img3.jpg" alt="картинка3" width="370">
+                                <img class="img2" src="./images/img2.jpg" alt="картинка2" width="370">
+                                <div class="task-name">
+                                    <p class="task-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+                                </div>
+                        </li>
+                        <li class="task-item">
+                                <img class="img3" src="./images/img3.jpg" alt="картинка3" width="370">
+                                <div class="task-name">
+                                    <p class="task-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                                </div>
                         </li>
                     </ul>
                 </div>
@@ -362,5 +371,16 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button data-modal-close class="close-button">
+                    <svg class="close-button-icon">
+                        <use href="./images/symbol-defs.svg#icon-cross">
+                        </use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
     </html>
