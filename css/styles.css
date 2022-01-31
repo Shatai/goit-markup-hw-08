@@ -233,6 +233,8 @@ button {
     margin-bottom: 40px;
 }
 
+/* MODAL */
+
 .hero-button {
     font-weight: 700;
     cursor: pointer;
@@ -280,13 +282,22 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .close-button-icon {
     width: 11px;
     height: 11px;
 }
+
+.close-button:hover .close-button-icon {
+    fill: var(--brand-color);
+}
+
+.close-button:focus .close-button-icon {
+    fill: var(--brand-color);
+}
+
+
 
 .modal {
     position: relative;
@@ -295,8 +306,177 @@ button {
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+.modal-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(20 / 23);
+    letter-spacing: 0.03em;
+}
+
+input {
+    padding: 8px;
+    font-family: inherit;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    
+  }
+
+  .modal-wrapper {
+    position: relative;
+    width: 448px;
+    padding-left: 41px;
+    padding-right: 39px;
+  }
+
+  /* .modal-wrapper:not(:last-child) {
+      margin-bottom: 10px;
+  } */
+
+
+  .user-icon {
+    /* padding: 10px 0px 10px 26px; */
+    font-size: 15px;
+    /* border: 2px solid #d9d9d9; */
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    outline: none;
+    width: 448px;
+    transition: border-color .1s linear;
+    padding-left: 42px;
+  }
+
+  .user-svg {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 50px;
+    top: 27px;
+    fill: black;
+    transition: fill .1s linear;
+  }
+
+  .user-icon:focus {
+    border-color: #2196f3;
+  }
+
+  .user-icon:focus + .user-svg {
+    fill: #2196f3;
+  }
+
+  .label {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: calc(12 / 14);
+      letter-spacing: 0.01em;
+      color: #757575;
+      font-family: Roboto;
+  }
+
+  .user-comment {
+      height: 120px;
+      resize: none;
+      padding: 12px 16px 12px 16px;
+      
+  }
+
+  .submit-button {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 50px;
+    background: #2196F3;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    
+  }
+
+  .submit-text {
+      color: white;
+  }
+
+  .checkbox-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      margin-top: 20px;
+  }
+  .checkbox {
+      margin-right: 9px;
+      margin-top: -3px;
+      
+  }
+
+  .contract-label {
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      line-height: calc(14/24);
+      font-family: Roboto;
+      color: #757575;
+      display: inline-block;
+  }
+
+  .checkbox-link {
+      color: var(--brand-color);
+      text-decoration: underline;
+  }
+
+  .checkbox-svg {
+      width: 11px;
+      height: 8px;
+  }
+
+  .checkbox-custom {
+      width: 16px;
+      height: 15px;
+      border-radius: 2px;
+      border: 0.2px solid black;
+  }
+
+  .checkbox:checked + .checkbox-custom {
+      background-color: var(--brand-color);
+      
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+  
+
+
+
+  
+
+
+
+
 
 
     /* MAIN */
@@ -534,8 +714,6 @@ button {
 
 
 .client-item {
-    
-    
     width: 170px;
     height: 92px;
 }

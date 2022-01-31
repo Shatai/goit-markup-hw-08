@@ -379,6 +379,58 @@
                         </use>
                     </svg>
                 </button>
+                <form>
+                    <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+                    <div class="modal-wrapper">
+                        <label for="user_name" class="label">Имя</label>
+                        <input class="user-icon" type="text" name="username" autofocus id="user_name" />
+                        <svg  class="user-svg">
+                            <use href="./images/symbol-defs.svg#icon-person-black">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="modal-wrapper">
+                        <label for="user_phone" class="label">Телефон</label>
+                        <input class="user-icon" type="text" name="phone" autofocus id="user_phone" />
+                        <svg  class="user-svg">
+                            <use href="./images/symbol-defs.svg#icon-phone-black">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="modal-wrapper">
+                        <label for="user_email" class="label">Почта</label>
+                        <input class="user-icon" type="text" name="email" autofocus id="user_email" />
+                        <svg  class="user-svg">
+                            <use href="./images/symbol-defs.svg#icon-email-black">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="modal-wrapper">
+                        <label for="user_comments" class="label">Комментарий</label>
+                        <textarea class="user-icon user-comment" type="text" name="comments" autofocus id="user_comments" placeholder="Введите текст"></textarea>
+                    </div>
+
+
+
+
+
+
+                    <div class="checkbox-wrapper">
+                        <label for="user_contract" class="contract-label">
+                            <input type="checkbox" name="contract" id="user_contract" class="checkbox hidden" />
+                            <span class="checkbox-custom">
+                                <svg  class="checkbox-svg">
+                                    <use href="./images/symbol-defs.svg#icon-tik">
+                                    </use>
+                                </svg>
+                            </span>
+                            Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a>
+                        </label>
+                    </div>
+
+                      <button type="submit" class="submit-button"><span class="submit-text">Отправить</span></button>
+                </form>
+                
             </div>
         </div>
         <script src="./js/modal.js"></script>
