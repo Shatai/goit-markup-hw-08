@@ -312,7 +312,7 @@ button {
     justify-content: center;
     align-items: center;
     padding-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
     line-height: calc(20 / 23);
@@ -347,6 +347,7 @@ input {
     margin-bottom: 10px;
     outline: none;
     width: 448px;
+    height: 40px;
     transition: border-color .1s linear;
     padding-left: 42px;
   }
@@ -356,7 +357,7 @@ input {
     width: 18px;
     height: 18px;
     left: 50px;
-    top: 27px;
+    top: 30px;
     fill: black;
     transition: fill .1s linear;
   }
@@ -879,6 +880,15 @@ footer {
 
 .logo-footer {
     margin-bottom: 30px;
+    font-family: 'Raleway';
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    font-style: normal;
+    color: var(--brand-color);
+    padding-bottom: 25px;
+    
 }
 
 .footer { 
@@ -906,8 +916,14 @@ footer {
     
 }
 
+/* .address {
+    display: flex;
+    align-items: baseline;
+} */
+
 .address-conteiner {
     margin-left: 70px;
+    
 }
 
 .address-list {
@@ -967,7 +983,6 @@ footer {
 }
 
 .spam-title {
-    padding-top: 72px;
     color: white;
     font-size: 14px;
     line-height: calc(16/14);
