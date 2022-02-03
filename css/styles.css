@@ -279,6 +279,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button-icon {
@@ -286,11 +287,11 @@ button {
     height: 11px;
 }
 
-.close-button:hover .close-button-icon {
+.close-button:hover {
     fill: var(--brand-color);
 }
 
-.close-button:focus .close-button-icon {
+.close-button:focus{
     fill: var(--brand-color);
 }
 
@@ -298,12 +299,13 @@ button {
 
 .modal {
     position: relative;
-    width: 528px;
-    height: 581px;
+    width: 448px;
+    height: 501px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
     border-radius: 4px;
+    padding: 40px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -311,7 +313,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    /* padding-top: 40px; */
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -333,9 +335,9 @@ input {
 
   .modal-wrapper {
     position: relative;
-    width: 448px;
-    padding-left: 41px;
-    padding-right: 39px;
+    /* width: 448px; */
+    /* padding-left: 41px;
+    padding-right: 39px; */
   }
 
 
@@ -346,17 +348,17 @@ input {
     border-radius: 4px;
     margin-bottom: 10px;
     outline: none;
-    width: 448px;
+    width: 100%;
     height: 40px;
     transition: border-color .1s linear;
-    padding-left: 42px;
+    /* padding-left: 42px; */
   }
 
   .user-svg {
     position: absolute;
     width: 18px;
     height: 18px;
-    left: 50px;
+    left: 15px;
     top: 30px;
     fill: black;
     transition: fill .1s linear;
@@ -383,6 +385,7 @@ input {
       height: 120px;
       resize: none;
       padding: 12px 16px 12px 16px;
+      font-family: Roboto;
       
   }
 
@@ -425,11 +428,15 @@ input {
 
   .contract-label {
       font-size: 14px;
-      letter-spacing: 0.03em;
-      line-height: calc(14/24);
+      /* letter-spacing: 0.03em; */
+      line-height: calc(24/14);
       font-family: Roboto;
       color: #757575;
       display: inline-block;
+      
+      
+      
+      
   }
 
   .checkbox-link {
@@ -438,16 +445,14 @@ input {
   }
 
   .checkbox-svg {
-      width: 11px;
-      height: 8px;
       opacity: 0;
   }
 
-  .checkbox-custom {
-      width: 16px;
-      height: 15px;
+   .contract-label span  {
+      width: 12px;
+      height: 11px;
       border-radius: 2px;
-      border: 0.5px solid #212121;
+      border: 2px solid #212121;
       margin-right: 9px; 
   }
 
@@ -880,15 +885,6 @@ footer {
 
 .logo-footer {
     margin-bottom: 30px;
-    font-family: 'Raleway';
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31/26);
-    font-style: normal;
-    color: var(--brand-color);
-    padding-bottom: 25px;
-    
 }
 
 .footer { 
@@ -916,14 +912,8 @@ footer {
     
 }
 
-/* .address {
-    display: flex;
-    align-items: baseline;
-} */
-
 .address-conteiner {
     margin-left: 70px;
-    
 }
 
 .address-list {
@@ -980,6 +970,7 @@ footer {
     border-radius: 4px;
     background: #2F303A;
     margin-top: 20px;
+    color: white;
 }
 
 .spam-title {
@@ -1038,3 +1029,6 @@ footer {
 
 
 
+
+
+  
