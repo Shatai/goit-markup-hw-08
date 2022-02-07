@@ -1,0 +1,25 @@
+@import './utils/vars';
+@import './base/reset';
+@import './base/common';
+
+// components
+
+@import './components/conteiner';
+@import './components/input';
+@import './components/label';
+@import './components/modal';
+
+// layouts
+@import './layout/header';
+@import './layout/hero';
+@import './layout/goal';
+@import './layout/task';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/pictures';
+@import './layout/text-conteiner';
+@import './layout/button-list';
+@import './layout/footer';
+@import './layout/footer-spam';
+
+

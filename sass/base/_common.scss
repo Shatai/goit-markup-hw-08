@@ -1,0 +1,60 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+}
+
+.link  {
+    text-decoration: none;
+    font-weight: 500;
+    color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    border: none;
+    background-color: #F5F4FA;
+    color: #212121;
+    border-radius: 4px;
+    height: 38px;
+    letter-spacing: 0.06em;
+    flex-basis: calc((100% - 120px) / 5);
+    padding: 6px 22px ;
+}
+
+.link:hover {
+    color: var(--brand-color);
+}
+
+.link:focus {
+    color: var(--brand-color);
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.button {
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: var(--brand-color);
+        color: white;
+    }
+    &:focus {
+        background-color:var(--brand-color);
+        color: white;
+    }
+}
+
+.section {
+    padding: 94px 0;
+}
