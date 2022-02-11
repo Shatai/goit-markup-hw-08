@@ -1,10 +1,22 @@
 .button-list {
+    
     display: flex;
-    justify-content: center; 
+    flex-wrap: wrap;
+    align-items: baseline;
+    @media screen and (min-width: 768px) {
+        &:not(:nth-child(3n)) {
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+    
 }
 
 .button-list__item {
+    margin-right: 10px;
     &:not(:first-child) {
-        margin-left: 8px;
+        // margin-left: 8px;
+        margin-bottom: 15px;
     }
 }
