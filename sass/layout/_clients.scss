@@ -12,16 +12,36 @@
 
 .client-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+
+    @media screen and (min-width:1200px) {
+        align-items: center;
+        flex-wrap: nowrap; 
+    }
+
 }
 
 .client-list__item {
     width: 170px;
     height: 92px;
-    &:not(:nth-child(1)) {
+    margin-bottom: 30px;
+    &:nth-child(2n){
         margin-left: 30px;
     }
+
+    @media screen and (min-width:768px) {
+        margin-left: 30px;
+        
+    }
+
+    @media screen and (min-width:1200px) {
+        &:not(:nth-child(1)) {
+            margin-left: 30px;
+        }  
+    }
+    
 }
 
 .client-list__link {

@@ -10,8 +10,50 @@
     background: #F5F4FA;
 }
 
+
+
 .team-list {
-    display: flex;
+    
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-wrap: nowrap; 
+
+        }  
+    
+    
+    
+    
+}
+
+.team-list__item {
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: white;
+    margin-bottom: 30px;
+
+    @media screen and (min-width:768px) {
+        &:nth-child(2n) {
+            margin-left: 30px;
+        }
+        flex-basis: calc((100% - 30px) / 2);
+        margin-bottom: 30px;
+    }
+    
+    @media screen and (min-width:1200px) {
+        flex-basis: calc((100% - 90px) / 4);
+        &+& {
+            margin-left: 30px;
+            flex-basis: calc((100% - 90px) / 4);
+        }  
+    }
+
+    
 }
 
 .team-list__image {
@@ -19,15 +61,7 @@
     max-width: 100%;
 }
 
-.team-list__item {
-    flex-basis: calc((100% - 90px) / 4);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background-color: white;
-    &+.team-list__item {
-        margin-left: 30px;
-    }
-}
+
 
 .team-info__title {
     font-size: 16px;
