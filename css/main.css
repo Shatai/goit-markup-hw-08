@@ -107,8 +107,13 @@ button {
 }
 
 input {
-  padding: 8px;
   font-family: inherit;
+}
+
+@media screen and (min-width: 1200px) {
+  input {
+    padding: 8px;
+  }
 }
 
 label {
@@ -281,7 +286,6 @@ label {
 }
 
 .checkbox-wrapper__input {
-  margin-right: 9px;
   margin-top: -3px;
   appearance: none;
 }
@@ -296,12 +300,25 @@ label {
   border-color: var(--brand-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .checkbox-wrapper__input {
+    margin-right: 9px;
+  }
+}
+
 .checkbox-wrapper__label {
-  font-size: 14px;
-  line-height: calc(24/14);
+  font-size: 10px;
+  line-height: calc(14/12);
   font-family: Roboto;
   color: #757575;
   display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-wrapper__label {
+    line-height: calc(24/14);
+    font-size: 14px;
+  }
 }
 
 .checkbox-wrapper__link {
@@ -326,7 +343,7 @@ label {
 .site-list {
   display: flex;
   margin-left: 93px;
-  padding-top: 32px;
+  padding-top: 31px;
 }
 
 .site-nav {
@@ -367,7 +384,7 @@ label {
 @media screen and (min-width: 768px) {
   .logo {
     padding-top: 32px;
-    padding-bottom: 10;
+    padding-bottom: 10px;
   }
 }
 
@@ -399,7 +416,7 @@ label {
   height: 4px;
   background-color: #2196F3;
   border-radius: 2px;
-  bottom: 3px;
+  bottom: 2px;
   left: 0;
   position: absolute;
   display: flex;
@@ -761,7 +778,7 @@ label {
 
 @media screen and (min-width: 1200px) {
   .goal__list {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 150px) / 4);
     margin-left: 30px;
   }
   .goal__list:not(:last-child) {
@@ -808,6 +825,7 @@ label {
 .goal__text {
   font-size: 14px;
   color: var(--text-color);
+  line-height: calc(24/14);
   letter-spacing: 0.03em;
 }
 
@@ -862,16 +880,35 @@ label {
   position: relative;
 }
 
+@media screen and (min-width: 1200px) {
+  .task-list__item {
+    flex-basis: calc((100% - 120px) / 3);
+  }
+}
+
 .team-section__title {
-  font-size: 36px;
-  line-height: calc(42/36);
+  font-size: 28px;
+  line-height: calc(33/28);
   text-align: center;
   margin-bottom: 50px;
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1200px) {
+  .team-section__title {
+    font-size: 36px;
+    line-height: calc(42/36);
+  }
+}
+
 .team-section {
   background: #F5F4FA;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-bottom: 64px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -917,7 +954,7 @@ label {
 
 .team-list__image {
   display: block;
-  max-width: 100%;
+  min-width: 100%;
 }
 
 .team-info__title {
@@ -991,12 +1028,25 @@ label {
   background-color: white;
 }
 
+@media screen and (min-width: 1200px) {
+  .client-section {
+    padding-top: 64px;
+  }
+}
+
 .client-section__title {
   text-align: center;
-  font-size: 36px;
-  line-height: calc(42/36);
+  font-size: 28px;
+  line-height: calc(33/28);
   margin-bottom: 50px;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .client-section__title {
+    font-size: 36px;
+    line-height: calc(42/36);
+  }
 }
 
 .client-list {
@@ -1014,7 +1064,7 @@ label {
 }
 
 .client-list__item {
-  width: 170px;
+  width: 210px;
   height: 92px;
   margin-bottom: 30px;
 }
@@ -1026,10 +1076,16 @@ label {
 @media screen and (min-width: 768px) {
   .client-list__item {
     margin-left: 30px;
+    width: 226px;
+    height: 92px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .client-list__item {
+    width: 170px;
+    height: 92px;
+  }
   .client-list__item:not(:nth-child(1)) {
     margin-left: 30px;
   }
@@ -1078,7 +1134,6 @@ label {
 .pictures-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
 }
 
@@ -1182,6 +1237,12 @@ label {
   letter-spacing: 0.06em;
 }
 
+@media screen and (min-width: 768px) {
+  .text-conteiner__title {
+    font-size: 17px;
+  }
+}
+
 .button-list {
   display: flex;
   flex-wrap: wrap;
@@ -1211,7 +1272,6 @@ footer {
   font-size: 14px;
   font-style: normal;
   color: white;
-  font-size: 16px;
   letter-spacing: 0.03em;
   line-height: calc(24/14);
   font-weight: 400;
@@ -1223,7 +1283,6 @@ footer {
 }
 
 .address-list {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1233,6 +1292,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .address-list {
     display: block;
+    margin-top: 20px;
   }
 }
 
@@ -1243,7 +1303,6 @@ footer {
 .logo-footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -1251,11 +1310,26 @@ footer {
 @media screen and (min-width: 1200px) {
   .logo-footer {
     display: block;
+    margin-bottom: 30px;
   }
 }
 
 .footer {
   padding: 60px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 5px;
+    padding-bottom: 50px;
+  }
 }
 
 .address-list__link--color {
@@ -1322,6 +1396,12 @@ footer {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-media-footer-title {
+    text-align: left;
+  }
 }
 
 .social-media-footer-list {

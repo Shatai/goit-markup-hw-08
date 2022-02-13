@@ -160,7 +160,7 @@
       margin-top: 5px;
   }
   .checkbox-wrapper__input {
-      margin-right: 9px;
+    //   margin-right: 9px;
       margin-top: -3px;
       appearance: none;
       &:checked + .checkbox-wrapper__checkbox {
@@ -172,15 +172,23 @@
         background-origin: border-box;
         border-color: var(--brand-color);
       }
+      @media screen and (min-width:1200px) {
+        margin-right: 9px;
+        
+    }
       
   }
 
   .checkbox-wrapper__label {
-      font-size: 14px;
-      line-height: calc(24/14);
+      font-size: 10px;
+      line-height: calc(14/12);
       font-family: Roboto;
       color: #757575;
       display: flex;
+      @media screen and (min-width:1200px) {
+        line-height: calc(24/14);
+        font-size: 14px;
+    }
   }
 
   .checkbox-wrapper__link {

@@ -34,7 +34,7 @@
         
     }
     @media screen and (min-width:1200px) {
-        flex-basis: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 150px) / 4);
         margin-left: 30px;
         &:not(:last-child){
             margin-bottom: 0;
@@ -80,6 +80,6 @@
 .goal__text {
     font-size: 14px;
     color: var(--text-color);
-    // line-height: calc(24/14);
+    line-height: calc(24/14);
     letter-spacing: 0.03em;
 }

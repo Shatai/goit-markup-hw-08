@@ -7,7 +7,6 @@ footer {
     font-size: 14px;
     font-style: normal;
     color: white;
-    font-size: 16px;
     letter-spacing: 0.03em;
     line-height: calc(24/14);
     font-weight: 400;
@@ -19,7 +18,7 @@ footer {
 }
 
 .address-list {
-    margin-top: 20px;
+    // margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +30,7 @@ footer {
     
     @media screen and (min-width: 1200px){
         display: block;
+        margin-top: 20px;
     }
 }
 
@@ -41,18 +41,30 @@ footer {
 .logo-footer {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     padding-top: 0;
     padding-bottom: 0;
 
     @media screen and (min-width: 1200px){
         display: block;
+        margin-bottom: 30px;
     }
     
 }
 
 .footer { 
     padding: 60px 0;
+    @media screen and (min-width:768px) {
+        padding-top: 0;
+        padding-bottom: 60px;
+        
+    }
+
+    @media screen and (min-width: 1200px){
+        padding-top: 5px;
+        padding-bottom: 50px;
+    }
+    
 }
 
 
@@ -125,6 +137,10 @@ footer {
     font-weight: 700;
     letter-spacing: 0.03em;
     text-align: center;
+    @media screen and (min-width: 1200px){
+        text-align: left;
+        
+    }
 }
 
 .social-media-footer-list {
