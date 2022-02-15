@@ -1,6 +1,15 @@
 .pictures-section {
-    padding-top: 35px;
-    padding-bottom: 64px;
+    padding-top: 25px;
+    padding-bottom: 34px;
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        padding-top: 15px;
+    
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        
+    }
 }
 
 .pictures-list {
@@ -44,7 +53,7 @@
             margin-right: 30px;
         }
         &:last-child{
-            margin-top: 30px;
+            
             margin-left: -338px;
         }
     }

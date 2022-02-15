@@ -1,7 +1,7 @@
 .site-list {
     display: flex;  
     margin-left: 93px;
-    padding-top: 31px;
+    align-items: center;
 }
 
 .site-nav {
@@ -38,8 +38,8 @@
     padding-bottom: 16px;
 
     @media screen and (min-width: 768px) {
-        padding-top: 32px;
-        padding-bottom: 10px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -71,6 +71,9 @@
         left: 0;
         position: absolute;
         display: flex;
+        @media screen and (max-width: 1199px) {
+            bottom: 10px;
+        }
     }
 }
 
@@ -87,7 +90,7 @@
     display: none;
     @media screen and (min-width: 768px) {
         display: block;
-        padding-top: 15px;
+        padding-top: 10px;
         margin-left: auto;
     }
 
